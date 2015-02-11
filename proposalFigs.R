@@ -21,7 +21,7 @@ aa <-  a + geom_point(aes(colour = factor(Industry)), size = 4) +
         legend.title=element_text(size=27,face="bold"), 
         axis.text=element_text(size=27, face="bold"),
         axis.title=element_text(size=27,face="bold"),
-        plot.title=element_text(size=28,face="bold")) + theme_bw()
+        plot.title=element_text(size=28,face="bold")) #+ theme_bw()
 #Census Data
 data1 <- read.csv("~/Dropbox/Egregious Polluters/Collins caseStudies/paperPulp/ppEmploy.csv", stringsAsFactors=FALSE)
 data2 <- read.csv("~/Dropbox/Egregious Polluters/Collins caseStudies/printedCB/printedCBEmploy.csv", stringsAsFactors=FALSE)
@@ -56,21 +56,21 @@ ee1 <- e1 + geom_point(aes(colour = factor(Employees)), size = 4) +
         legend.title=element_text(size=27,face="bold"), 
         axis.text=element_text(size=27, face="bold"),
         axis.title=element_text(size=27,face="bold"),
-        plot.title=element_text(size=28,face="bold")) + theme_bw()
+        plot.title=element_text(size=28,face="bold")) #+ theme_bw()
 ee2 <- e2 + geom_point(aes(colour = factor(Employees)), size = 4) +  
   geom_point(colour="grey90", size = 2) +
   theme(legend.text=element_text(size=27), 
       legend.title=element_text(size=27,face="bold"), 
       axis.text=element_text(size=27, face="bold"),
       axis.title=element_text(size=27,face="bold"),
-      plot.title=element_text(size=28,face="bold")) + theme_bw()
+      plot.title=element_text(size=28,face="bold")) #+ theme_bw()
 ee3 <- e3 + geom_point(aes(colour = factor(Employees)), size = 4) +  
   geom_point(colour="grey90", size = 2) +
   theme(legend.text=element_text(size=27), 
         legend.title=element_text(size=27,face="bold"), 
         axis.text=element_text(size=27, face="bold"),
         axis.title=element_text(size=27,face="bold"),
-        plot.title=element_text(size=28,face="bold")) + theme_bw()
+        plot.title=element_text(size=28,face="bold")) #+ theme_bw()
 
 require(gridExtra)
 grid.arrange(aa, ee1, ee2, ee3, ncol=2, nrow=2)
@@ -96,7 +96,7 @@ b + geom_point(aes(colour = factor(Industry)), size = 4) +
         legend.title=element_text(size=28,face="bold"), 
         axis.text=element_text(size=28, face="bold"),
         axis.title=element_text(size=28,face="bold"),
-        plot.title=element_text(size=28,face="bold"))   + theme_bw()
+        plot.title=element_text(size=28,face="bold"))   #+ theme_bw()
 
 c <- qplot(years, Prop90, shape=Industry, scale_shape(solid = FALSE), color=Industry, size=I(8), data=data,
            main="Proportion of Facilities Producing 90 Percent of All Yearly Industrial Release Pounds Over Time",
@@ -109,7 +109,7 @@ c + geom_point(aes(colour = factor(Industry)), size = 4) +
         legend.title=element_text(size=28,face="bold"), 
         axis.text=element_text(size=28, face="bold"),
         axis.title=element_text(size=28,face="bold"),
-        plot.title=element_text(size=28,face="bold"))  + theme_bw()
+        plot.title=element_text(size=28,face="bold"))  #+ theme_bw()
 
 
 
